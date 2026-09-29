@@ -6,7 +6,6 @@ def crear_validador_multiple(*lambdas_criterios):
 
     return validar
 
-
 validar_usuario = crear_validador_multiple(
     lambda usuario: usuario["edad"] >= 18,
     lambda usuario: usuario["activo"]
